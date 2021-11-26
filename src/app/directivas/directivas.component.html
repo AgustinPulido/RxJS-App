@@ -1,0 +1,36 @@
+<div class='container' style="margin-top: 25px;">
+    <table *ngIf='indicators' class="table">
+        <thead>
+            <tr>
+                <th>Indicadores</th>
+                <th>Anterior</th>
+                <th>Actual</th>
+                <th [width]='350'>Nuevo valor</th>
+                <th>Informar</th>
+                <th>Indice</th>
+            </tr>
+        </thead>
+        <tbody style="overflow: auto">
+            <tr *ngFor='let indicador of indicators; let i = index'>
+                <td>
+                    {{indicador.name}}
+                </td>
+                <td>
+                    {{indicador.penultimate}}
+                </td>
+                <td>
+                    {{indicador.ultimate}}
+                </td>
+                <td>
+                    <input [(ngModel)]="values[i]" type="number" style="width: 200px; " aria-describedby="newValue " required>
+                </td>
+                <td>
+                    <button (click)='update(i, values[i])' class="button">Enviar</button>
+                </td>
+                <td>
+                    {{i}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,37 @@
+<div class='container' style="margin-top: 25px;">
+    <button *ngIf='repositories.length == 0' (click)='apiCall()' class='btn btn-primary'>Iniciar</button>
+    <table *ngIf='repositories.length > 0' class="table">
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Nombre</th>
+                <th>Descripcion</th>
+                <th [width]='350'>Url para clonar</th>
+                <th>Visibilidad</th>
+                <th>Indice</th>
+            </tr>
+        </thead>
+        <tbody style="overflow: auto">
+            <tr *ngFor='let repo of repositories; let i = index'>
+                <td>
+                    {{repo.created_at | relativeDate}}
+                </td>
+                <td>
+                    {{repo.name}}
+                </td>
+                <td>
+                    {{repo.description}}
+                </td>
+                <td>
+                    {{repo.clone_url}}
+                </td>
+                <td>
+                    {{repo.visibility}}
+                </td>
+                <td>
+                    {{i}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
