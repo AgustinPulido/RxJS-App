@@ -20,6 +20,9 @@ export class ObservablesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // Ejemplo si queremos contar la cantidad de veces que se clickea un boton (hay que reemplazar document por button en el fromEvent y agregar id al button en cuestion)
+  // button = document.getElementById('rxjs-button-id');
+
   startClickCount(){
     this.flag = true;
     this.count = fromEvent(document, 'click')

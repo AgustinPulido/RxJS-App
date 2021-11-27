@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
+
+// Imports para el ejemplo del operador map
 import { of } from 'rxjs';
 import { first, last, map, filter } from "rxjs/operators";
-import { FormsModule } from '@angular/forms';
 
 // Ejemplo de operador map
 // of(1, 2, 3, 4, 5)
