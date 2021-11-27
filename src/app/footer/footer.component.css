@@ -13,3 +13,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.mat-toolbar.mat-primary {
+    background-color: #c2185b;
+}
