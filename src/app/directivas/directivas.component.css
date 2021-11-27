@@ -9,3 +9,8 @@
     color: white;
     border: 0px;
 }
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}

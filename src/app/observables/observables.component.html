@@ -1,5 +1,5 @@
 <div class='container' style="margin-top: 25px;">
-    <button *ngIf='!flag' (click)='startClickCount()' class='btn btn-primary'>Iniciar</button>
+    <button *ngIf='!flag' (click)='startClickCount()' class='button btn btn-primary'>Iniciar</button>
     <mat-form-field *ngIf='flag' appearance="fill">
         <mat-label>Contador</mat-label>
         <input matInput [(ngModel)]='contador' disabled>
