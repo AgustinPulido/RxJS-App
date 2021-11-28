@@ -23,6 +23,9 @@ import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatInputModule } from '@angular/material/input';
 import { SharedModule } from "../shared/shared.module";
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatCardModule } from '@angular/material/card';
+import { RickMortyApiComponent } from './rick-morty-api/rick-morty-api.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,7 @@ import { SharedModule } from "../shared/shared.module";
     ApicallComponent,
     DirectivasComponent,
     FooterComponent,
+    RickMortyApiComponent,
   ],
   imports: [
     SharedModule,
@@ -45,7 +49,9 @@ import { SharedModule } from "../shared/shared.module";
     MatIconModule,
     MatTabsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatProgressSpinnerModule,
+    MatCardModule
   ],
   providers: [JsonService, HttpClient],
   bootstrap: [AppComponent]

@@ -1,0 +1,37 @@
+<div style="margin-top: 25px; margin-left: 50px; margin-right: 50px; overflow: auto;">
+    <div class='characters'>
+        <table *ngIf="characters$ | async as characters" class="table table-hover table-striped" style='height: 400px!important;'>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Status</th>
+                    <th>Especie</th>
+                    <th>Tipo</th>
+                    <th>Genero</th>
+                </tr>
+            </thead>
+            <tbody style="overflow: scroll">
+                <tr *ngFor='let character of characters'>
+                    <td>
+                        {{character.name}}
+                    </td>
+                    <td>
+                        {{character.status}}
+                    </td>
+                    <td>
+                        {{character.species}}
+                    </td>
+                    <td>
+                        {{character.type}}
+                    </td>
+                    <td>
+                        {{character.gender}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div *ngIf='isLoading' style="text-align: -webkit-center; margin-top: 25px;">
+        <mat-spinner [color]="'accent'"></mat-spinner>
+    </div>
+</div>

@@ -1,5 +1,5 @@
-<div style="margin-top: 25px; margin-left: 50px; margin-right: 50px;">
-    <button *ngIf='repositories.length == 0' (click)='apiCall()' class='button btn btn-primary'>Iniciar</button>
+<div style="margin-top: 25px; margin-left: 50px; margin-right: 50px; overflow: auto;">
+    <button *ngIf='!isLoading && repositories.length == 0' (click)='GithubCall()' class='button btn btn-primary'>Github Api</button>
     <table *ngIf='repositories.length > 0' class="table table-hover table-striped">
         <thead>
             <tr>
@@ -34,4 +34,7 @@
             </tr>
         </tbody>
     </table>
+    <div *ngIf='isLoading' style="text-align: -webkit-center;">
+        <mat-spinner [color]="'accent'"></mat-spinner>
+    </div>
 </div>

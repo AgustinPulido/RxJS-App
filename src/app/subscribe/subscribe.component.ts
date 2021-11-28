@@ -26,13 +26,13 @@ export class SubscribeComponent implements OnInit {
 
   start(){
     // Ejemplo de obvervable que pushea valores 1, 2 y 3 en orden secuancial cuando se suscribe y dps el valor 4 despues de un segundo despues de la subscripcion
-    const observable = new Observable(subscriber => {
-      subscriber.next(1);
-      subscriber.next(2);
-      subscriber.next(3);
+    const observable = new Observable(observer => {
+      observer.next(1);
+      observer.next(2);
+      observer.next(3);
       setTimeout(() => {
-        subscriber.next(4);
-        subscriber.complete();
+        observer.next(4);
+        observer.complete();
       }, 1000);
     });
     console.log('Justo antes de suscribirse');

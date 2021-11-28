@@ -1,0 +1,21 @@
+.button {
+    font-size: 14px;
+    height: 30px;
+    width: 100px;
+    background-color: #c2185b;
+    border-radius: 50px;
+    border-color: #c2185b;
+    text-align: center;
+    color: white;
+    border: 0px;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.characters {
+    height: 600px;
+    overflow: auto;
+}
