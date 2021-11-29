@@ -22,10 +22,25 @@ export class DirectivasComponent implements OnInit {
       name: 'Crecimiento del capital',
       penultimate: 1000,
       ultimate: 5000,
+    },
+    {
+      name: 'Crecimiento en hectáreas',
+      penultimate: 50,
+      ultimate: 100,
+    },
+    {
+      name: 'Empleados',
+      penultimate: 20,
+      ultimate: 25,
+    },
+    {
+      name: 'Egresos',
+      penultimate: 100,
+      ultimate: 150,
     }
   ];
 
-  values: Array<any> = [0, 0, 0];
+  values: Array<any> = [0, 0, 0, 0, 0, 0];
 
   constructor() { }
 
