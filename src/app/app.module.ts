@@ -9,6 +9,7 @@ import { SubscribeComponent } from './subscribe/subscribe.component';
 import { ApicallComponent } from './apicall/apicall.component';
 import { DirectivasComponent } from './directivas/directivas.component';
 import { FooterComponent } from './footer/footer.component';
+import { RickMortyApiComponent } from './rick-morty-api/rick-morty-api.component';
 
 // Modules
 import { NgModule } from '@angular/core';
@@ -25,7 +26,6 @@ import { MatInputModule } from '@angular/material/input';
 import { SharedModule } from "../shared/shared.module";
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatCardModule } from '@angular/material/card';
-import { RickMortyApiComponent } from './rick-morty-api/rick-morty-api.component';
 
 @NgModule({
   declarations: [
