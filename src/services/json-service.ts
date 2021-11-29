@@ -17,7 +17,7 @@ export class JsonService{
     }
 
     getRickAndMortyCharacters(): Observable<CharacterResult[]> {
-        return this.http.get<CharacterApi>("https://rickandmortyapi.com/api/character/?page=2")
+        return this.http.get<CharacterApi>("https://rickandmortyapi.com/api/character")
         .pipe(map((apiResult: any) =>
             apiResult.results
         ));
