@@ -26,6 +26,7 @@ import { MatInputModule } from '@angular/material/input';
 import { SharedModule } from "../shared/shared.module";
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatCardModule } from '@angular/material/card';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { MatCardModule } from '@angular/material/card';
     DirectivasComponent,
     FooterComponent,
     RickMortyApiComponent,
+    FormComponent,
   ],
   imports: [
     SharedModule,
