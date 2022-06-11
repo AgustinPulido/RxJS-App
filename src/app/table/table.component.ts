@@ -102,8 +102,6 @@ export class TableComponent implements OnInit {
 
   newInscriptionModal(details: any): void {
     this.studentSelected = details;
-    console.log(this.data.indexOf(details));
-    console.log(details);
     let dialogRef = this.dialog.open(this.newInscription, { disableClose: false });
     dialogRef.afterClosed().subscribe((result) => { });
   }
