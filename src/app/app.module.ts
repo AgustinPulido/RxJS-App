@@ -1,5 +1,5 @@
 // Services
-import { JsonService} from '../services/json-service';
+import { JsonService } from '../services/json-service';
 
 // Components
 import { AppComponent } from './app.component';
@@ -27,6 +27,11 @@ import { SharedModule } from "../shared/shared.module";
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatCardModule } from '@angular/material/card';
 import { FormComponent } from './form/form.component';
+import { TableComponent } from './table/table.component';
+import { MatTableModule } from '@angular/material/table';
+import { DetailsComponent } from './details/details.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -39,9 +44,13 @@ import { FormComponent } from './form/form.component';
     FooterComponent,
     RickMortyApiComponent,
     FormComponent,
+    TableComponent,
+    DetailsComponent,
   ],
   imports: [
     SharedModule,
+    MatDialogModule,
+    MatSelectModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
@@ -53,7 +62,8 @@ import { FormComponent } from './form/form.component';
     MatFormFieldModule,
     MatInputModule,
     MatProgressSpinnerModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule
   ],
   providers: [JsonService, HttpClient],
   bootstrap: [AppComponent]

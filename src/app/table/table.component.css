@@ -1,0 +1,50 @@
+.button {
+    font-size: 14px;
+    height: 30px;
+    width: 100px;
+    background-color: #c2185b;
+    border-radius: 50px;
+    border-color: #c2185b;
+    text-align: center;
+    color: white;
+    border: 0px;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.characters {
+    height: 600px;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+}
+
+mat-icon {
+    cursor: pointer;
+}
+
+.button-approve {
+    width: 170px;
+    height: 32px;
+    padding: 4px 12px;
+    color: #213f99;
+    border-radius: 25px;
+    border: 1px solid #213f99;
+    background-color: #ffffff;
+}
+
+.button-reject {
+    width: 170px;
+    height: 32px;
+    padding: 4px 12px;
+    color: #dc3545;
+    border-radius: 25px;
+    border: 1px solid #dc3545;
+    ;
+    background-color: #ffffff;
+}
