@@ -1,5 +1,5 @@
 <div class='container' style="margin-top: 50px!important;">
-    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource">
         <!-- Position Column -->
         <ng-container matColumnDef="position">
           <th mat-header-cell *matHeaderCellDef> No. </th>
@@ -35,7 +35,7 @@
 
 <ng-template #detail>
   <h4 style='font-family: Open Sans; color: #434040; font-size: 23px; font-weight: 700;'>Detalle de inscripciones</h4>
-    <table mat-table [dataSource]="dataSource2" class="mat-elevation-z8" style="width: 800px;">
+    <table mat-table [dataSource]="dataSource2" style="width: 800px;">
         <!-- Position Column -->
         <ng-container matColumnDef="Id">
           <th mat-header-cell *matHeaderCellDef> Id </th>
